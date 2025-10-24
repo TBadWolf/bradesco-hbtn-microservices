@@ -1,0 +1,22 @@
+O que é Microsserviços?
+    É uma arquitetura que divide uma aplicação por serviços, ou seja, cada parte de microsserviço corresponde
+    a funcionalidades específicas menores, são independentes e orientados a negócio. Cada parte do microsserviço
+    não depende do outro para seer implantado, cada um pode seguir um "rumo" diferente, pois são mantidos separadamente
+    e sua comunicação é basicamente via APIs ou mensagens.
+
+
+Monolítica: todo o código, incluindo lógica, interface e etc está tudo em um único deploy, a manutenção
+    é um pouco mais complicada por conta do crescimento do código, geralmente são aplicações muito grandes e de
+    diversas funcionalidades juntas.
+
+Microsserviços: os serviços são independentes e tem as funcionalidades separadas, tem os deploys separados,
+    melhora o nivel de manutenção e velocidade de desenvolvimento, você pode alterar somente uma parte do código
+    sem afetar outras partes do sistema, que continuam operando.
+
+Benefícios do Microsserviços:
+Escalabilidade independente: escalar apenas os serviços que precisam de mais recursos.
+Desdobramento e desenvolvimento mais rápidos: equipes podem lançar mudanças sem afetar todo o sistema.
+Resiliência: falhas isoladas em um serviço não necessariamente derrubam toda a aplicação.
+
+Tipos de comunicação entre microsserviços:
+Http/Rest, Grpc, Mensagens (Assincronas), e serviços Event-driven
